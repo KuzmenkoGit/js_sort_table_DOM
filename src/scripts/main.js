@@ -65,7 +65,9 @@ if (table) {
         });
       }
 
-      tbody.append(...sortedRows);
+      if (sortedRows.length) {
+        tbody.append(...sortedRows);
+      }
     });
   }
 }
